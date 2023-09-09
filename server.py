@@ -5,7 +5,7 @@ from pytube import YouTube
 from flask import send_file
 import os
 
-app = Flask(__name__,static_folder='app/build',static_url_path='')
+app = Flask(__name__,static_folder='app/build',static_url_path='',static_template='app/build/static')
 cors = CORS(app)
 # members api route
 
